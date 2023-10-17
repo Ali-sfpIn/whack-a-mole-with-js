@@ -1,0 +1,97 @@
+@font-face {
+  font-family: western;
+  src: url(../fonts/WesternBrotherPersonalUse-6YMYY.otf);
+}
+body {
+  background-color: rgb(253, 29, 29);
+  font-family: western;
+}
+.title-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  color: white;
+  font-size: 80px;
+}
+
+.start-btn {
+  padding: 20px 40px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid white;
+  cursor: pointer;
+  margin: 10px;
+  font-family: western;
+}
+.start-btn:hover {
+  background-color: rgb(195, 20, 20);
+  color: white;
+  transition: all 300ms;
+}
+.start-btn:active {
+  background-color: red;
+  border-radius: 50px;
+}
+
+.score-input {
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: auto;
+  border-radius: 50%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  padding-left: 19px;
+}
+.score-label {
+  margin-right: 15px;
+}
+.score {
+  margin-top: 30px;
+}
+.container {
+  width: 900px;
+  height: 365px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.muddy-container {
+  margin-top: 50px;
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+/* implementing the flex items */
+.mudd {
+  width: 200px;
+  height: 103px;
+  z-index: 2;
+  margin-top: 40px;
+}
+.mole {
+  width: 120px;
+  position: absolute;
+  left: 18px;
+  top: 40px;
+  cursor: pointer;
+  transition: all 300ms, transform 1ms;
+}
+.mudle {
+  width: 200px;
+  height: 140px;
+  display: flex;
+  position: relative;
+  margin-top: 30px;
+}
+.hidden {
+  display: none;
+  transform: translateY(-30rem);
+}
+.rise {
+  top: -30px;
+}
